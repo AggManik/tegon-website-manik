@@ -1,0 +1,70 @@
+.triageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #000; /* Set background to white */
+    color: #fff; /* Set text color to black */
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; 
+  }
+  
+  .imageWrapper {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+  }
+  
+  .triageImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .textWrapper {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .channelWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .channelItem {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .channelIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  

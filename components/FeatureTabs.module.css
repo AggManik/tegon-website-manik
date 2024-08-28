@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.featureTabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #EFEFEF;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem; /* Adjusted font size */
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabButton img {
+  width: 24px; /* Adjust the size of the icons */
+  height: 24px;
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon vertically with text */
+}
+
+.tabButton:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: -3px; /* Align with the horizontal line */
+  width: 1px;
+  background-color: #ccc; /* Color of the vertical separator */
+}
+
+.tabButton.active {
+  border-bottom: 3px solid #000; /* Adds a black line under the selected tab */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.featureImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}

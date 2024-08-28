@@ -1,0 +1,65 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps the header on top */
+  background-color: #efefef; /* Matches the page background */
+  border-bottom: 1px solid #ddd; /* Adds a subtle bottom border */
+  padding: 10px 40px; /* Adjusted padding for a slightly smaller header */
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.body {
+  padding-top: 60px; /* Ensures content doesn't overlap with the header */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between logo and navigation */
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px; /* Space between navigation links */
+  flex-grow: 1; /* Allows navigation to take up space */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.signIn {
+  margin-left: auto; /* Ensures the sign-in button is aligned to the right */
+}
+
+.signIn button {
+  padding: 12px 28px; /* Adjusted button padding */
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signIn button:hover {
+  background-color: #333;
+}
